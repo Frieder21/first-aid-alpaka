@@ -74,3 +74,92 @@ nav img    {
     font-size: 18px;
 
 }
+
+#footer {
+    transition: 0.2s;
+    background-color: #47a91a;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3vh;
+}
+
+#footer #updownarrow {
+    transition: 0.2s;
+    transform: translate(-50%, 0) scaleY(-1);
+    height: 2vh;
+    width: 2vh;
+    position: absolute;
+    left: 50%;
+    top: 0.5vh;
+}
+
+#footer #copyright {
+    transition: 0.2s;
+    font-family: B612MonoRegular, sans-serif;
+    color: #04614d;
+    height: 1.5vh;
+    position: absolute;
+    left: 1vw;
+    bottom: 0;
+    transform: translate(0, 50%)
+}
+
+#footer #itemtext {
+    transition: 0.1s;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 33%;
+    transform: translate(-50%, -50%);
+}
+
+#footer #itemicon {
+    transition: 0.1s;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 67%;
+    transform: translate(-50%, -50%);
+}
+
+#footer #itemicon img {
+    padding: 0;
+    height: 0;
+    width: 0;
+}
+
+#footer #itemtext a {
+    font-family: B612MonoRegular, sans-serif;
+    color: #073d19;
+    text-decoration: none;
+    padding: 20px;
+}
+
+#footer:hover #updownarrow {
+    transform: translate(-50%, 0) scaleY(1);
+}
+
+#footer:hover {
+    height: 20vh;
+}
+
+#footer:hover #copyright {
+    transform: translate(-50%, 0);
+    left: 50%;
+    color: #073d19;
+}
+
+#footer:hover #itemtext {
+    display: block;
+}
+
+#footer:hover #itemicon {
+    display: block;
+}
+#footer:hover #itemicon img {
+    padding: 20px;
+    height: 2vh;
+    width: 2vh;
+}
